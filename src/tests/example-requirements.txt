@@ -1,0 +1,5 @@
+-r ../../requirements.txt
+requests
+-e git://github.com/mozilla/elasticutils.git#egg=elasticutils
+imdbpie==0.1.0
+celery[sqs,s3]

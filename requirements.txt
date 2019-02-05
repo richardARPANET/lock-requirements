@@ -1,0 +1,4 @@
+requirements-parser>=0.2.0,<1.0.0
+pypi-simple>=0.4.0,<1.0.0
+docopt>=0.5.0,<1.0.0
+wheel
