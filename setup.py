@@ -21,7 +21,7 @@ with open('README.md', 'r', 'utf-8') as f:
 
 setup(
     name='lock-requirements',
-    version='0.1.0.dev0',
+    version='0.1.0',
     packages=find_packages('src', exclude=('tests',)),
     package_dir={'': 'src'},
     description=desc,
