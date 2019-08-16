@@ -3,7 +3,7 @@
 Release History
 ---------------
 
-0.1.1 (unreleased)
+0.1.1 (2019-08-16)
 ++++++++++++++++++
 
 - Bugfix, Fixes bug around --index-url and --extra-index url in requirements.txt, lines would get removed.
