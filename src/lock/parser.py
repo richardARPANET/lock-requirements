@@ -22,6 +22,8 @@ def parse(reqstr):
             continue
         elif line.startswith('-r') or line.startswith('--requirement'):
             yield line
+        elif line.startswith('--'):
+            yield line
         elif line.startswith('-f') or line.startswith('--find-links') or \
                 line.startswith('-i') or line.startswith('--index-url') or \
                 line.startswith('--extra-index-url') or \

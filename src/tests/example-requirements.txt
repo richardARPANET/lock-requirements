@@ -1,5 +1,9 @@
+
+--index-url https://pypi.org/simple/
+--extra-index-url https://${FURY_TOKEN}@pypi.fury.io/acme-inc/
 -r ../../requirements.txt
 requests
 -e git://github.com/mozilla/elasticutils.git#egg=elasticutils
 imdbpie==0.1.0
 celery[sqs,s3]
+some-private-package

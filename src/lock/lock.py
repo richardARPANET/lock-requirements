@@ -25,7 +25,10 @@ def _lock_requirements(*, input_path, output_path, endpoint):
                 )
                 extras = sorted(req.extras)
                 extras_str = f'[{",".join(extras)}]' if extras else ''
-                output_lines.append(f'{req.name}{extras_str}=={version}\n')
+                if version is None:
+                    output_lines.append(f'{req.name}{extras_str}\n')
+                else:
+                    output_lines.append(f'{req.name}{extras_str}=={version}\n')
 
     with open(output_path, 'w') as file_:
         for line in output_lines:
